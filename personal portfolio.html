@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Personal Portfolio Website */
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #243b55;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* Home Section */
+        #home {
+            background: linear-gradient(to right, #243b55, #141e30);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 1.5s;
+        }
+
+        #home img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        /* Common Section Styling */
+        section {
+            background-color: white;
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+            animation: slideUp 1s;
+        }
+
+        h2 {
+            color: #243b55;
+            border-bottom: 2px solid #ffd166;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        /* Technical Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background-color: #243b55;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .skills span:hover {
+            transform: scale(1.1);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #243b55;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e09f3e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                padding: 8px;
+            }
+
+            nav a {
+                margin: 6px;
+                font-size: 13px;
+            }
+
+            section {
+                margin: 15px;
+                padding: 18px;
+            }
+
+            #home {
+                padding: 35px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home / Profile -->
+    <header id="home">
+        <img src="profile.jpg" alt="Profile Photo">
+        <h1>Your Name</h1>
+        <p>Student | Web Development Learner</p>
+        <p>Welcome to my personal portfolio website!</p>
+    </header>
+
+    <!-- Educational Qualifications -->
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <ul>
+            <li>School: Your School Name</li>
+            <li>Intermediate: Your College Name</li>
+            <li>Degree: Your Course Name</li>
+        </ul>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>C Programming</span>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Reading Books</li>
+            <li>Listening to Music</li>
+            <li>Learning New Technologies</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Student Notice Board</li>
+            <li>Simple Python Calculator</li>
+        </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Participated in College Activities</li>
+            <li>Completed HTML and CSS Practice</li>
+        </ul>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>Click below to download my resume.</p>
+        <a class="btn" href="resume.pdf" download>
+            Download Resume
+        </a>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: yourmail@example.com</p>
+        <p>Phone: Your Phone Number</p>
+        <p>Location: Your City</p>
+        <a class="btn" href="mailto:yourmail@example.com">
+            Contact Me
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
